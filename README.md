@@ -86,6 +86,7 @@ usando yarn:
 yarn cypress run 
 ```
 
+Para caso seja necessario utilizar o Puglin.
 O passo a passo a seguir é referente a um plugin de relatório, que mostrará um dashboard referente aos test case realizados. O passo se encontra no seguinte perfil do GitHub: https://github.com/Shelex/cypress-allure-plugin
 
 Instalação do puglin:
