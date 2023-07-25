@@ -1,0 +1,13 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "desafio de analista de teste",
+  "main": "index.js",
+  "author": "Leonardo Alves",
+  "license": "MIT",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.23.0",
+    "cypress": "^12.17.2"
+  }
+}
