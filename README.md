@@ -86,10 +86,11 @@ usando yarn:
 yarn cypress run 
 ```
 
-Para caso seja necessario utilizar o Puglin.
+Para caso seja necessario utilizar o plugin.
+
 O passo a passo a seguir é referente a um plugin de relatório, que mostrará um dashboard referente aos test case realizados. O passo se encontra no seguinte perfil do GitHub: https://github.com/Shelex/cypress-allure-plugin
 
-Instalação do puglin:
+Instalação do plugin:
 
 usando npm:
 
@@ -101,7 +102,7 @@ usando yarn:
 yarn add -D @shelex/cypress-allure-plugin
 ```
 
-Para se utilizar o Puglin, deve se acrescentar em (cypress.config.js) as seguintes informacoes:
+Para se utilizar o plugin, deve se acrescentar em (cypress.config.js) as seguintes informacoes:
 
 ```
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
