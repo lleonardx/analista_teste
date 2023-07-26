@@ -8,10 +8,10 @@ describe('Testes no site Sauce Demo', () => {
   it('Cenario I: Realizar Login com o usuario standard_user', () => {
     // Insere o nome de Usuario e Senha validos e clica no botao de Login
     cy.get('input[placeholder="Username"]')
-    .type('standard_user')
+    .type('standard_user', { log: false })
 
     cy.get('input[placeholder="Password"]')
-    .type('secret_sauce')
+    .type('secret_sauce', { log: false })
 
     cy.get('input[id="login-button"]').click()
 
@@ -24,10 +24,10 @@ describe('Testes no site Sauce Demo', () => {
   it('Cenario II: Realizar Login com o usuario bloqueado "locked_out_user" ', () => {
     // Insere o nome de Usuario bloqueado e senha valida e clicar no botao de Login 
     cy.get('input[placeholder="Username"]')
-    .type('locket_out_user')
+    .type('locket_out_user', { log: false })
 
     cy.get('input[placeholder="Password"]')
-    .type('secret_sauce')
+    .type('secret_sauce', { log: false })
 
     cy.get('input[id="login-button"]').click()
 

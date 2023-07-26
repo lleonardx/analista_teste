@@ -2,11 +2,7 @@
 
 describe('Testes no site Sauce Demo', () => {
     beforeEach('Acessar o site', () => {
-      cy.visit('https://www.saucedemo.com/')
-      cy.get('input[placeholder="Username"]').type('standard_user')
-      cy.get('input[placeholder="Password"]').type('secret_sauce')
-      cy.get('input[id="login-button"]').click()
-      cy.url().should('include', '/inventory.html')
+      cy.login('standard_user', 'secret_sauce')
     })
   
     it('Cenário III: Verificar o produto com menor e maior valor e adicioná-los ao carrinho', () => {

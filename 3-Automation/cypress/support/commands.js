@@ -12,7 +12,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+// -=Cypress.Commands.add('login', (email, password) => { ... })
+    Cypress.Commands.add('login', (username, password) => {
+        cy.visit('https://www.saucedemo.com/')
+        cy.get('input[placeholder="Username"]').type(username, { log: false })
+        cy.get('input[placeholder="Password"]').type(password, { log: false })
+        cy.get('input[id="login-button"]').click()
+        //cy.url().should('contain', '/login-successful')
+  })
+
 //
 //
 // -- This is a child command --
