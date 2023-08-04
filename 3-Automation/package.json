@@ -9,5 +9,10 @@
     "@shelex/cypress-allure-plugin": "^2.40.0",
     "allure-commandline": "^2.23.0",
     "cypress": "^12.17.2"
+  },
+
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
   }
 }
